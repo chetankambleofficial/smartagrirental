@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industry Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-green-100 flex items-center justify-center min-h-screen p-6">
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
+        <h2 class="text-2xl font-bold mb-6 text-center text-green-600">Create a New Industry Account</h2>
+        <form method="post" class="space-y-4">
+            <label class="block">
+                <span class="text-gray-700">ID/span>
+                <input type="text" name="id" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring focus:ring-green-200" placeholder="Enter your name">
+            </label>
+            <label class="block">
+                <span class="text-gray-700">Name</span>
+                <input type="text" name="Name" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring focus:ring-green-200" placeholder="Enter your name">
+            </label>
+            <label class="block">
+                <span class="text-gray-700">Mobile Number</span>
+                <input type="text" name="MobileNumber" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring focus:ring-green-200" placeholder="Enter your mobile number">
+            </label>
+            <label class="block">
+                <span class="text-gray-700">Email</span>
+                <input type="email" name="email" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring focus:ring-green-200" placeholder="Enter your email">
+            </label>
+            <label class="block">
+                <span class="text-gray-700">Username</span>
+                <input type="text" name="Username" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring focus:ring-green-200" placeholder="Choose a username">
+            </label>
+            <label class="block">
+                <span class="text-gray-700">Password</span>
+                <input type="password" name="password" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring focus:ring-green-200" placeholder="Create a password">
+            </label>
+            <label class="block">
+                <span class="text-gray-700">District</span>
+                <input type="text" name="district" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring focus:ring-green-200" placeholder="Enter your district">
+            </label>
+            <button type="submit" class="w-full mt-4 bg-green-600 text-white p-2 rounded-md hover:bg-green-700 focus:outline-none focus:ring focus:ring-green-300">Sign Up</button>
+        </form>
+        <p class="mt-4 text-center text-gray-600">
+            Already have an account? <a href="/industrylogin" class="text-green-600 hover:underline">Login here</a>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Equipment</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-green-100 flex flex-col items-center justify-center min-h-screen p-6">
+
+    <h2 class="text-3xl font-bold text-center text-green-700 mb-6">Add New Equipment</h2>
+    
+    <form method="POST" action="/add_equipment" class="bg-white rounded-lg shadow-lg p-8 max-w-md w-full">
+        <div class="mb-4">
+            <input type="number" name="equipment_id" placeholder="Equipment ID" required class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-green-500">
+        </div>
+        <div class="mb-4">
+            <input type="text" name="equipment_name" placeholder="Equipment Name" required class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-green-500">
+        </div>
+        <div class="mb-4">
+            <input type="number" name="price_per_day" placeholder="Price per Day" required class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-green-500">
+        </div>
+        <div class="mb-4">
+            <input type="text" name="available_date" placeholder="Available Date" required class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-green-500">
+        </div>
+        <div class="mb-4">
+            <input type="number" name="total_equipments" placeholder="Total Equipments" required class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-green-500">
+        </div>
+        <div class="mb-6">
+            <input type="number" name="available_equipments" placeholder="Available Equipments" required class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-green-500">
+        </div>
+        <div class="mb-6">
+            <input type="number" name="industry_id" placeholder="industry_id" required class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-green-500">
+        </div>
+        <button type="submit" class="w-full bg-green-600 text-white py-2 rounded-md hover:bg-green-700 transition">Add Equipment</button>
+    </form>
+
+    <a href="/equipment" class="mt-4 text-green-600 hover:underline">Back to Equipment List</a>
+</body>
+</html>

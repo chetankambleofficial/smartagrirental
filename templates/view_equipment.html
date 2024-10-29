@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Equipment</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-green-100 flex flex-col items-center min-h-screen p-6">
+
+    <div class="container max-w-6xl w-full bg-white rounded-lg shadow-lg p-6">
+        <h1 class="text-3xl font-bold text-center text-green-700 mb-4">Equipment List</h1>
+        <div class="mb-4 text-center">
+            <a href="{{ url_for('add_equipment') }}" class="bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition">Add New Equipment</a>
+        </div>
+        <table class="min-w-full border-collapse border border-gray-300">
+            <thead>
+                <tr class="bg-green-200">
+                    <th class="border border-gray-300 p-2">Equipment ID</th>
+                    <th class="border border-gray-300 p-2">Equipment Name</th>
+                    <th class="border border-gray-300 p-2">Price per Day</th>
+                    <th class="border border-gray-300 p-2">Available Date</th>
+                    <th class="border border-gray-300 p-2">Total Equipments</th>
+                    <th class="border border-gray-300 p-2">Available Equipments</th>
+                    <th class="border border-gray-300 p-2">industry_id</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for equipment in equipment_list %}
+                <tr class="hover:bg-green-50 transition">
+                    <td class="border border-gray-300 p-2">{{ equipment[0] }}</td>
+                    <td class="border border-gray-300 p-2">{{ equipment[1] }}</td>
+                    <td class="border border-gray-300 p-2">{{ equipment[2] }}</td>
+                    <td class="border border-gray-300 p-2">{{ equipment[3] }}</td>
+                    <td class="border border-gray-300 p-2">{{ equipment[4] }}</td>
+                    <td class="border border-gray-300 p-2">{{ equipment[5] }}</td>
+                    <td class="border border-gray-300 p-2">{{ equipment[6] }}</td>
+                
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div class="mt-4 text-center">
+            <a href="{{ url_for('logout') }}" class="bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-700 transition">Logout</a>
+        </div>
+    </div>
+</body>
+</html>
