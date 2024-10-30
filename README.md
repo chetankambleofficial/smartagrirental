@@ -24,6 +24,6 @@ Smart Agri Equipment Rental Service is a web-based platform designed to connect 
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/your-username/smart-agri-equipment-rental.git
+git clone https://github.com/chetankambleofficial/smartagrirental.git
 cd smart-agri-equipment-rental
 # smartagrirental
