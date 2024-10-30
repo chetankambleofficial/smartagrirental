@@ -23,10 +23,10 @@ Smart Agri Equipment Rental Service is a web-based platform designed to connect 
 - SQLite
 - 
 ### Contributors
-Chetan Kamble
-Abdulmuzamil Khadirnavar
-Vivekanadayya
-Sandesh
+- Chetan Kamble
+- Abdulmuzamil Khadirnavar
+- Vivekanadayya
+- Sandesh
 ### Clone the Repository
 ```bash
 git clone https://github.com/chetankambleofficial/smartagrirental.git
