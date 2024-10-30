@@ -21,7 +21,12 @@ Smart Agri Equipment Rental Service is a web-based platform designed to connect 
 - Python 3.x
 - Flask or Django
 - SQLite
-
+- 
+### Contributors
+Chetan Kamble
+Abdulmuzamil Khadirnavar
+Vivekanadayya
+Sandesh
 ### Clone the Repository
 ```bash
 git clone https://github.com/chetankambleofficial/smartagrirental.git
